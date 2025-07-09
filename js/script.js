@@ -31,11 +31,13 @@ document.addEventListener('DOMContentLoaded', function() {
             const delBtn = document.createElement('button');
             delBtn.className = 'delete-btn';
             delBtn.textContent = 'Delete';
-            delBtn.onclick = () => {
+            delBtn.setAttribute('aria-label', 'Delete task');
+            delBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
                 todos.splice(idx, 1);
                 saveTodos();
                 renderTodos();
-            };
+            });
             li.appendChild(delBtn);
             li.onclick = (e) => {
                 if (e.target !== delBtn) {
