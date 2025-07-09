@@ -90,6 +90,8 @@ header p {
     justify-content: space-between;
     box-shadow: 0 2px 8px rgba(67,198,172,0.07);
     transition: background 0.2s;
+    gap: 8px;
+    flex-wrap: wrap;
 }
 #todo-list li.done {
     background: #d1ffd6;
@@ -117,4 +119,80 @@ header p {
 }
 .delete-btn:hover {
     background: #ff5e62;
+}
+.edit-btn {
+    background: #43c6ac;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 5px 12px;
+    font-size: 0.98em;
+    cursor: pointer;
+    margin-right: 8px;
+    transition: background 0.2s;
+}
+.edit-btn:hover {
+    background: #f7971e;
+}
+.edit-form {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin-top: 4px;
+}
+.edit-form input[type="text"],
+.edit-form input[type="date"] {
+    padding: 6px 8px;
+    border: 1px solid #43c6ac;
+    border-radius: 6px;
+    font-size: 1em;
+    background: #f8ffae;
+    color: #333;
+}
+.edit-form button[type="submit"] {
+    background: #43c6ac;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 14px;
+    font-size: 0.98em;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.edit-form button[type="submit"]:hover {
+    background: #f7971e;
+}
+.edit-form button[type="button"] {
+    background: #e0e0e0;
+    color: #333;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 14px;
+    font-size: 0.98em;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.edit-form button[type="button"]:hover {
+    background: #ff5e62;
+    color: #fff;
+}
+@media (max-width: 500px) {
+    .container {
+        padding: 18px 6px 14px 6px;
+        max-width: 98vw;
+    }
+    #todo-form {
+        flex-direction: column;
+        gap: 8px;
+    }
+    .filter-section {
+        flex-direction: column;
+        gap: 6px;
+        align-items: flex-start;
+    }
+    #todo-list li {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+    }
 }
