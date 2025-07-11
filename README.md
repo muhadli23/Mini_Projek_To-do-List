@@ -1,27 +1,31 @@
 # To Do List Mini Project
 
-Aplikasi To Do List sederhana berbasis web. Anda dapat menambah, menandai selesai, memfilter, dan menghapus tugas. Data tersimpan otomatis di browser (localStorage).
+Aplikasi To Do List sederhana berbasis web dengan tampilan biru laut (ocean blue). Anda dapat menambah, menandai selesai, memfilter, dan menghapus tugas. Data tersimpan otomatis di browser (localStorage).
 
 ## Fitur
 
 - Tambah tugas baru dengan tanggal
-- Tandai tugas selesai (klik pada teks)
+- Tandai tugas selesai dengan tombol checklist
+- Edit tugas
 - Hapus tugas
-- Filter tugas: Semua, Hari Ini, Mendatang
+- Hapus semua tugas sekaligus
+- Status pengerjaan tugas
+- Filter tugas: Semua, Pending, Selesai
+- Notifikasi saat menambah/mengubah/menghapus tugas
 - Data tetap tersimpan meski browser ditutup
 
 ## Cara Menjalankan
 
-1. Buka file `js/index.html` di folder `mini_projek` menggunakan browser.
-2. Tambahkan tugas pada kolom input, pilih tanggal, lalu klik tombol "Tambah".
-3. Klik teks tugas untuk menandai selesai/belum.
-4. Klik tombol "Hapus" untuk menghapus tugas.
+1. Buka file `index.html` di folder `mini_projek` menggunakan browser.
+2. Tambahkan tugas pada kolom input, pilih tanggal, lalu klik tombol "+".
+3. Klik tombol Complete untuk menandai selesai/belum.
+4. Klik tombol Delete untuk menghapus tugas.
 5. Gunakan menu filter untuk menampilkan tugas sesuai kategori.
 
 ## Struktur File
 
-- `js/index.html` : Tampilan utama aplikasi
-- `css/style.css` : Styling aplikasi
+- `index.html` : Tampilan utama aplikasi
+- `css/style.css` : Styling aplikasi (biru laut)
 - `js/script.js` : Logika aplikasi
 - `README.md` : Dokumentasi
 

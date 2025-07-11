@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="todo-wrapper">
+            <h1 class="title">Muhadli To do List</h1>
+            <div id="notification" class="notification"></div>
+            <div class="form-section">
+                <form id="todoForm" class="todo-form">
+                    <div class="form-group">
+                        <input 
+                            type="text" 
+                            id="taskInput" 
+                            placeholder="Add to-do..." 
+                            required
+                        >
+                        <input 
+                            type="date" 
+                            id="dateInput" 
+                            required
+                        >
+                        <button type="submit" class="add-btn">+</button>
+                    </div>
+                    <div class="error-message" id="errorMessage"></div>
+                </form>
+            </div>
+            <div class="filter-section">
+                <div class="filter-group">
+                    <span class="filter-label"><span style="font-size:18px;vertical-align:middle;">🔎</span> FILTER</span>
+                    <select id="statusFilter" class="filter-select">
+                        <option value="all">Semua</option>
+                        <option value="pending">Belum Selesai</option>
+                        <option value="completed">Sudah Selesai</option>
+                    </select>
+                </div>
+                <button id="deleteAllBtn" class="delete-all-btn">
+                    <span style="vertical-align:middle;">🗑️</span> DELETE ALL
+                </button>
+            </div>
+            <div class="todo-list-section">
+                <div class="table-header">
+                    <div class="header-task">TASK</div>
+                    <div class="header-date">DUE DATE</div>
+                    <div class="header-status">STATUS</div>
+                    <div class="header-actions">ACTIONS</div>
+                </div>
+                <div id="todoList" class="todo-list">
+                    <div class="empty-state">
+                        <p>No task found</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
